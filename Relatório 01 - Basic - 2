@@ -1,25 +1,18 @@
-' Declarando variáveis
-Dim n as Integer = 0
-Dim numero as Integer = 0
-Dim f as Integer = 0
+let numero = 0
+let fatorial = 0
+let i = 0
 
+numero = RND(10)
+fatorial = numero
 
-' Função para calcular o fatorial de um número
-FUNCTION Fatorial(n as Integer) as Integer
-    IF n <= 1 THEN
-        Fatorial = 1
-    ELSE
-        Fatorial = n * Fatorial(n - 1)
-    END IF
-END FUNCTION
+PRINT "Número aleatório gerado: ";
+PRINT numero
 
-' Gerando um número aleatório entre 1 e 10
-RANDOMIZE TIMER ' Gera numeros aleatórios, evita que o RND gere sempre o mesmo número
-numero = INT(RND * 10)  ' Salva esse número
+for i  = 1 TO numero STEP 1
+fatorial = fatorial * i
+next i
 
-' Exibindo o número aleatório
-PRINT "Número aleatório gerado: "; numero
-
-' Calculando e exibindo o fatorial
-f = Fatorial(numero)
-PRINT "Fatorial de "; numero; " é: "; f
+PRINT "O fatorial de ";
+PRINT numero
+PRINT "é: "
+PRINT fatorial
