@@ -1,0 +1,38 @@
+' Declarando variáveis
+Dim a as Integer = 0
+Dim b as Integer = 0
+Dim c as Integer = 0
+Dim d as Integer = 0
+Dim x1 as integer = 0
+Dim x2 as integer = 0
+
+' Solicitar valores ao usuário
+PRINT "Digite o valor de a:"
+INPUT a
+
+PRINT "Digite o valor de b:"
+INPUT b
+
+PRINT "Digite o valor de c:"
+INPUT c
+
+' Calcular o d
+d = b*b - 4*a*c
+
+IF d > 0 THEN
+    ' Se o d for positivo, há duas raízes reais
+    x1 = (-b + Sqr(d)) / (2 * a)
+    x2 = (-b - Sqr(d)) / (2 * a)
+    PRINT "As raízes são reais e diferentes."
+    PRINT "x1 = "; x1
+    PRINT "x2 = "; x2
+ELSEIF d = 0 THEN
+    ' Se o d for zero, há uma raiz real dupla
+    x1 = -b / (2 * a)
+    PRINT "A raiz é real e dupla."
+    PRINT "x1 = x2 = "; x1
+ELSE
+    ' Se o d for negativo, as raízes são complexas
+
+    PRINT "As raízes são complexas e diferentes."
+END IF
