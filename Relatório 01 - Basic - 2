@@ -1,18 +1,18 @@
-let numero = 0
-let fatorial = 0
-let i = 0
+10 let numero = 0
+20 let fatorial = 0
+30 let i = 0
 
-numero = RND(10)
-fatorial = numero
+40 numero = RND(10)
+50 fatorial = numero
 
-PRINT "Número aleatório gerado: ";
-PRINT numero
+60 PRINT "Número aleatório gerado: ";
+70 PRINT numero
 
-for i  = 1 TO numero STEP 1
-fatorial = fatorial * i
-next i
+80 for i  = 1 TO numero STEP 1
+90 fatorial = fatorial * i
+100 next i
 
-PRINT "O fatorial de ";
-PRINT numero
-PRINT "é: "
-PRINT fatorial
+110 PRINT "O fatorial de ";
+120 PRINT numero
+130 PRINT "é: "
+140 PRINT fatorial
