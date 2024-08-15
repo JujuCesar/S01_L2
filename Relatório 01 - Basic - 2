@@ -1,0 +1,25 @@
+' Declarando variáveis
+Dim n as Integer = 0
+Dim numero as Integer = 0
+Dim f as Integer = 0
+
+
+' Função para calcular o fatorial de um número
+FUNCTION Fatorial(n as Integer) as Integer
+    IF n <= 1 THEN
+        Fatorial = 1
+    ELSE
+        Fatorial = n * Fatorial(n - 1)
+    END IF
+END FUNCTION
+
+' Gerando um número aleatório entre 1 e 10
+RANDOMIZE TIMER ' Gera numeros aleatórios, evita que o RND gere sempre o mesmo número
+numero = INT(RND * 10)  ' Salva esse número
+
+' Exibindo o número aleatório
+PRINT "Número aleatório gerado: "; numero
+
+' Calculando e exibindo o fatorial
+f = Fatorial(numero)
+PRINT "Fatorial de "; numero; " é: "; f
