@@ -1,0 +1,9 @@
+-- Entrada de dados
+print("Digite um número:")
+local n = tonumber(io.read()) -- Convertendo a entrada para número
+
+-- Calculando a tabuada do número
+for i = 1, 10 do
+  local results = n * i
+  print(n .. " x " .. i .. " = " .. results)
+end
