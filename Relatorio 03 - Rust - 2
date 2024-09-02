@@ -10,5 +10,5 @@ fn main() {
 
     preenche_arr(&mut arr, numero); // Chama a função
 
-    println!("Array preenchido: {:?}", arr); // Imprime o array preenchido
+    println!("Array preenchido: {:?}", arr); // Saída de dados
 }
