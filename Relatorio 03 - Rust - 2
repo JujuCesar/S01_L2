@@ -1,0 +1,14 @@
+fn preenche_arr(arr: &mut [i32], x: i32) {
+    for i in 0..arr.len() {
+        arr[i] = i as i32 * x;
+    }
+}
+
+fn main() {
+    let mut arr = [0; 10]; // Cria um array de 10 elementos todos com 0
+    let numero = 5;    // Valor para multiplicar
+
+    preenche_arr(&mut arr, numero); // Chama a função
+
+    println!("Array preenchido: {:?}", arr); // Imprime o array preenchido
+}
