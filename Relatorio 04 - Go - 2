@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	fatorial := 1 // Inicializando fatorial
+	
+	// Gerar um número aleatório entre 0 e 10
+	numero := rand.Intn(10)
+
+	// Calcular o fatorial dentro da main
+	if numero > 1 {
+		for i := 1; i <= numero; i++ {
+			fatorial *= i
+		}
+	}
+
+	// Exibir o número gerado e seu fatorial
+	fmt.Printf("Número gerado: %d\n", numero)
+	fmt.Printf("Fatorial de %d é: %d\n", numero, fatorial)
+}
