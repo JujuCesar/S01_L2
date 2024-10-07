@@ -1,0 +1,30 @@
+# Classe base Carro
+class Carro
+  def descrever
+    "Isso é um carro."
+  end
+end
+
+# Subclasse CarroEsportivo
+class CarroEsportivo < Carro
+  def descrever
+    "Esse carro é um modelo esportivo"
+  end
+end
+
+# Subclasse CarroSedan
+class CarroSedan < Carro
+  def descrever
+    "Esse carro é um Sedan"
+  end
+end
+
+# Criando instâncias
+carro = Carro.new
+carro_esportivo = CarroEsportivo.new
+carro_sedan = CarroSedan.new
+
+# Chamando o método de cada carro
+puts carro.descrever
+puts carro_esportivo.descrever
+puts carro_sedan.descrever
